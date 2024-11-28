@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    border: 1px solid red;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -50,30 +51,36 @@ header {
 main {
     color: white;
 }
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.5rem; */
+
+}
 .content {
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-direction: column;
     gap: 2rem;
 }
 .tekscontent {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bolder;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-
+    /* align-items: center; */
     /* margin-bottom: 20px; */
 }
 .content h1 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .content p {
-    font-size: 0.8em;
-    text-align: center;
+    font-size: 4rem;
+}
+.teksp2 p {
+    font-size: 2rem;
+    font-weight: lighter;
 }
 .buttons button {
     color: white;
@@ -85,6 +92,10 @@ main {
     background-color: transparent;
     width: 150px;
     font-size: 1.5em;
+}
+.fotoawal img {
+    max-width: 400px;
+
 }
 .aboutMe1 {
     height: 100vh;
@@ -243,4 +254,12 @@ main {
     .main-content {
         gap: 3rem;
     }
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
 }
